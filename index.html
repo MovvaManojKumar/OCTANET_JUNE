@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chef's Palace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container">
+      <a href="#hero"><img src="https://marketplace.canva.com/EAFpeiTrl4c/1/0/1600w/canva-abstract-chef-cooking-restaurant-free-logo-9Gfim1S8fHg.jpg" alt="Logo" class="logo" id="logo"></a>
+      <div class="menu-toggle" id="menu-toggle">
+        <div></div>
+        <div></div>
+      </div>
+      <div class="nav" id="nav">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/chefs">Find Chefs</a></li>
+            <li><a href="/login">Chefs Registration</a></li>
+            <li><a href="/update-chef">Update Chef</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Chef's Palace</h1>
+      <p>Ghar ka khaana aapke table par!!!</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+      This website explores a unique online platform that connects passionate home-based chefs
+      with food enthusiasts who crave the authentic taste of home-cooked meals. At Chef's Palace,
+      we believe that cooking is not just a necessity but an art that deserves to be celebrated.
+      Our mission is to bring the warmth and love of home-cooked food to your table, making
+      every meal a delightful experience.
+    </p>
+    <p>
+      Our platform allows talented home chefs to showcase their culinary skills and share their
+      family recipes with a wider audience. Whether you're looking for traditional dishes that
+      remind you of your childhood or adventurous new flavors, our chefs are ready to surprise
+      and delight your taste buds. Join us in this culinary journey and discover the joy of
+      home-cooked food, prepared with love and passion.
+    </p>
+    <p>
+      At Chef's Palace, we prioritize quality and authenticity. Every dish is prepared using fresh,
+      locally-sourced ingredients, ensuring that you get the best taste and nutrition. We also
+      offer a wide range of cuisines to cater to diverse palates and dietary preferences.
+      From spicy Indian curries to delectable desserts, our chefs have something for everyone.
+    </p>
+    <p>
+      So why wait? Dive into the world of home-cooked goodness and enjoy meals that are crafted
+      with care and delivered straight to your doorstep. With Chef's Palace, every meal is a
+      celebration of taste, tradition, and love.
+    </p>
+    <img src="https://www.tastingtable.com/img/gallery/20-delicious-indian-dishes-you-have-to-try-at-least-once/l-intro-1645057933.jpg" alt="About Image">
+  </section>
+
+  <section class="menu-section" id="menu">
+    <h2>Chef's Signature Dishes</h2>
+    <p>View some of our new chefs added today</p>
+    <div class="menu-patchwork">
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwJvU0TtUxwU3ojVZCm4nG6WebwRFyXdYxTg&s" alt="Anitha">
+        <h3>Anitha - Btech Graduate</h3>
+        <p>Hyderabadi Biriyani</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZJDHsag653qkBXbTw2wQPoO3TNgigFUIRRg&s" alt="Vijayalakshmi Amma">
+        <h3>Vijayalakshmi Amma</h3>
+        <p>Viyawada Pachadi Ruchulu</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTNPDtO9CPX45r_jQNywAej_nP09udgHCJ0Q&s" alt="Prathyush">
+        <h3>Prathyush</h3>
+        <p>Kolkata Chinese cuisine</p>
+      </div>
+      <div class="menu-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6qDsZsP80g8x4xMH3qtA5eQ6fgtSY6pMtZg&s" alt="Deekshith and Shahn">
+        <h3>Deekshith and Shahn</h3>
+        <p>Gujarath Dessert specials</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div>
+      <h3>Contact Location</h3>
+      <p>3784 Patterson Road, #8 New York, CA 69000</p>
+      <p>Phone: 8943246783</p>
+    </div>
+    <div>
+      <h3>Chef Availability Hours</h3>
+      <p>Monday - Friday: 09:00 AM - 8:00 PM</p>
+      <p>Saturday - Sunday: 09:00 AM - 12:00 PM</p>
+    </div>
+    <div>
+      <h3>Social Network</h3>
+      <a href="/"><img src="https://cdn-icons-png.flaticon.com/128/3670/3670147.png" alt="YouTube"></a>
+      <a href="/"><img src="https://cdn-icons-png.flaticon.com/128/733/733547.png" alt="Facebook"></a>
+      <a href="/"><img src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png" alt="Instagram"></a>
+      <a href="/"><img src="https://cdn-icons-png.flaticon.com/128/14449/14449860.png" alt="Pinterest"></a>
+      <a href="/"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968759.png" alt="Discord"></a>
+    </div>
+    <p>&copy; 2023 Chef's Palace. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    const logo = document.getElementById('logo');
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        header.classList.add('active');
+        logo.classList.add('active');
+        if (nav.classList.contains('active')) {
+          nav.classList.remove('active');
+          menuToggle.classList.remove('active');
+        }
+      } else {
+        header.classList.remove('active');
+        logo.classList.remove('active');
+      }
+    });
+
+    menuToggle.addEventListener('click', () => {
+      menuToggle.classList.toggle('active');
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
